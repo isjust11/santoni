@@ -1,0 +1,6 @@
+{
+  "name": "Santoni Mũi Né Resort",
+  "description": "Website giới thiệu và đặt phòng chuỗi Villa & Resort phong cách Địa Trung Hải tại Mũi Né, Bình Thuận.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

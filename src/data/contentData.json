@@ -1,0 +1,300 @@
+{
+  "brand": {
+    "name": "Santoni Mũi Né",
+    "tagline": "Chuỗi Villa & Resort riêng tư gần biển dành cho gia đình và đoàn đông",
+    "hotline": "0931 176 499",
+    "address": "139 Huỳnh Thúc Kháng, Mũi Né, Phan Thiết, Bình Thuận",
+    "email": "booking@santonimuine.vn",
+    "facebook": "https://facebook.com/santonimuine",
+    "tiktok": "https://tiktok.com/@santonimuine",
+    "zalo": "https://zalo.me/0931176499"
+  },
+  "hero": {
+    "title": "Santoni Mũi Né",
+    "subtitle": "Khơi nguồn cảm hứng nghỉ dưỡng Địa Trung Hải phóng khoáng giữa lòng Mũi Né đầy nắng gió. Chuỗi Villa & Resort biệt lập, sang trọng và tràn đầy năng lượng.",
+    "cta": {
+      "book": "Đặt phòng ngay",
+      "explore": "Khám phá phòng",
+      "quote": "Nhận báo giá"
+    },
+    "backgroundImage": "/input_file_0.png"
+  },
+  "about": {
+    "title": "Câu Chuyện Santoni",
+    "subtitle": "Tinh hoa kiến trúc Santorini hòa quyện cùng sóng biển Mũi Né",
+    "paragraphs": [
+      "Khởi nguồn từ niềm đam mê nét đẹp tinh khôi của hòn đảo ngọc Santorini Hy Lạp, Santoni Mũi Né ra đời như một ốc đảo trắng muốt giữa rặng dừa xanh mướt và bờ cát vàng óng của Bình Thuận.",
+      "Chúng tôi không chỉ xây dựng những bức tường vòm cong mềm mại hay những ô cửa xanh coban đặc trưng, mà chúng tôi kiến tạo một lối sống nghỉ dưỡng organic, nơi mỗi khoảnh khắc đều ngập tràn ánh nắng tự nhiên và gió biển.",
+      "Mỗi căn villa thuộc hệ thống Santoni mang một cá tính riêng nhưng đều chung một triết lý: riêng tư tuyệt đối, tiện nghi đẳng cấp và kết nối gia đình trọn vẹn. Đây là nơi bạn tìm về sự bình yên bên những người thân yêu nhất.",
+      "Santoni tự hào là thương hiệu nghỉ dưỡng uy tín hàng đầu Mũi Né dành cho đoàn đông và gia đình, mang đến kỳ nghỉ dưỡng chuẩn mực của một resort hạng sang trong không gian ấm cúng như chính ngôi nhà của bạn."
+    ],
+    "highlights": [
+      { "label": "Phong cách", "value": "Địa Trung Hải" },
+      { "label": "Không gian", "value": "Biệt lập & Riêng tư" },
+      { "label": "Sức chứa", "value": "Đoàn từ 10 - 50 khách" },
+      { "label": "Vị trí", "value": "Sát biển Huỳnh Thúc Kháng" }
+    ],
+    "image": "/input_file_1.png"
+  },
+  "accommodations": [
+    {
+      "id": "santoni-1",
+      "name": "Santoni 1",
+      "image": "/input_file_2.png",
+      "rooms": 4,
+      "beds": 5,
+      "capacity": "12 khách",
+      "pool": "Hồ bơi riêng biệt 25m²",
+      "beachDistance": "50m đi bộ ra biển",
+      "priceFrom": "1.800.000₫",
+      "description": "Không gian ấm cúng mang phong cách gia đình, sân vườn rộng thích hợp cho tiệc BBQ tối."
+    },
+    {
+      "id": "santoni-2",
+      "name": "Santoni 2",
+      "image": "/input_file_1.png",
+      "rooms": 6,
+      "beds": 8,
+      "capacity": "18 khách",
+      "pool": "Hồ bơi tràn viền 35m²",
+      "beachDistance": "80m ra biển",
+      "priceFrom": "2.500.000₫",
+      "description": "Biệt thự vòm cong nghệ thuật với ban công lộng gió nhìn thẳng ra hướng rặng dừa thơ mộng."
+    },
+    {
+      "id": "santoni-3",
+      "name": "Santoni 3",
+      "image": "/input_file_3.png",
+      "rooms": 8,
+      "beds": 10,
+      "capacity": "25 khách",
+      "pool": "Hồ bơi vô cực 50m²",
+      "beachDistance": "30m đi bộ ra biển",
+      "priceFrom": "3.500.000₫",
+      "description": "Siêu biệt thự nghỉ dưỡng cao cấp nhất với nội thất gỗ mộc sang trọng và sân thượng ngắm hoàng hôn cực đỉnh."
+    },
+    {
+      "id": "resort-santoni",
+      "name": "Resort Santoni",
+      "image": "/input_file_0.png",
+      "rooms": 15,
+      "beds": 20,
+      "capacity": "50 khách",
+      "pool": "Tổ hợp 2 hồ bơi lớn 120m²",
+      "beachDistance": "Sát bãi biển riêng",
+      "priceFrom": "6.000.000₫",
+      "description": "Toàn khu phức hợp nghỉ dưỡng cao cấp thích hợp cho các hoạt động Teambuilding, đám cưới ngoài trời hoặc gala công ty."
+    }
+  ],
+  "villaDetail": {
+    "target": "Santoni 3",
+    "subtitle": "Kiệt tác nghỉ dưỡng được săn đón nhất tại Mũi Né",
+    "bannerImage": "/input_file_0.png",
+    "videoPlaceholder": "Video flycam toàn cảnh biệt thự và bờ biển lộng gió",
+    "images": [
+      { "url": "/input_file_3.png", "caption": "Phòng ngủ Master ấm cúng với ô cửa vòm nhìn ra rặng dừa" },
+      { "url": "/input_file_1.png", "caption": "Ngoại thất trắng tinh khôi chuẩn Santorini dưới nắng vàng" },
+      { "url": "/input_file_2.png", "caption": "Khu vực ăn uống ngoài trời bên hồ bơi lãng mạn" },
+      { "url": "/input_file_0.png", "caption": "Hồ bơi vô cực ngập tràn ánh hoàng hôn" }
+    ],
+    "specs": {
+      "rooms": "8 phòng ngủ khép kín sang trọng",
+      "beds": "10 giường cỡ King (Đệm cao cấp nâng niu giấc ngủ)",
+      "capacity": "Phù hợp lý tưởng cho đoàn 20 - 25 người lớn",
+      "size": "Diện tích khuôn viên 650m²",
+      "living": "Phòng khách sinh hoạt chung rộng 80m² tích hợp karaoke",
+      "kitchen": "Bếp đảo hiện đại, trang bị đầy đủ dụng cụ nấu nướng cao cấp"
+    },
+    "amenities": [
+      "Hồ bơi tràn viền nước mặn 50m² lọc thông minh",
+      "Sân BBQ rộng phục vụ bữa tiệc 30 người kèm lò nướng chuyên dụng",
+      "Phòng xông hơi đá muối Himalaya giảm stress",
+      "Dịch vụ quản gia riêng hỗ trợ setup tiệc và dọn dẹp 24/7",
+      "Hỗ trợ loa kéo chất lượng cao hát karaoke ngoài trời",
+      "Xe máy miễn phí cho khách khám phá xung quanh (2 xe)"
+    ],
+    "price": "Chỉ từ 3.500.000₫ / đêm (Ngày thường)",
+    "faq": [
+      {
+        "q": "Thời gian nhận và trả phòng tại Santoni 3?",
+        "a": "Giờ nhận phòng (Check-in) là từ 14:00 và giờ trả phòng (Check-out) trước 12:00 trưa hôm sau để đảm bảo dọn dẹp vệ sinh chuẩn resort."
+      },
+      {
+        "q": "Biệt thự có gần biển không?",
+        "a": "Santoni 3 nằm ở vị trí đắc địa, chỉ cách bãi tắm cát trắng 30m đi bộ, rất thuận tiện cho trẻ em và người lớn tuổi tắm biển bất cứ lúc nào."
+      },
+      {
+        "q": "Chúng tôi có được tự do nấu ăn và làm tiệc BBQ không?",
+        "a": "Hoàn toàn tự do! Biệt thự trang bị sẵn bếp đảo tiện nghi đầy đủ gia vị, bát đĩa và lò nướng BBQ ngoài trời cỡ lớn hoàn toàn miễn phí."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Bảng Giá & Chính Sách",
+    "subtitle": "Minh bạch chi phí, ưu đãi ngập tràn cho kỳ nghỉ trọn vẹn",
+    "categories": [
+      {
+        "name": "Ngày Trong Tuần (Thứ 2 - Thứ 5)",
+        "rates": [
+          { "villa": "Santoni 1", "price": "1.800.000₫" },
+          { "villa": "Santoni 2", "price": "2.500.000₫" },
+          { "villa": "Santoni 3", "price": "3.500.000₫" },
+          { "villa": "Resort Santoni", "price": "6.000.000₫" }
+        ]
+      },
+      {
+        "name": "Cuối Tuần (Thứ 6 - Chủ Nhật)",
+        "rates": [
+          { "villa": "Santoni 1", "price": "2.400.000₫" },
+          { "villa": "Santoni 2", "price": "3.200.000₫" },
+          { "villa": "Santoni 3", "price": "4.500.000₫" },
+          { "villa": "Resort Santoni", "price": "8.500.000₫" }
+        ]
+      },
+      {
+        "name": "Các Ngày Lễ Tết Quốc Gia",
+        "rates": [
+          { "villa": "Santoni 1", "price": "3.200.000₫" },
+          { "villa": "Santoni 2", "price": "4.500.000₫" },
+          { "villa": "Santoni 3", "price": "6.000.000₫" },
+          { "villa": "Resort Santoni", "price": "12.000.000₫" }
+        ]
+      }
+    ],
+    "policies": [
+      "Tiêu chuẩn số lượng khách áp dụng theo từng căn. Phụ thu người lớn thứ hai sau tiêu chuẩn là 200.000₫/người/đêm (miễn phí trẻ em dưới 6 tuổi).",
+      "Tiền đặt cọc giữ phòng là 50% tổng giá trị booking. Phần còn lại sẽ thanh toán khi nhận bàn giao villa.",
+      "Chính sách hủy phòng: Miễn phí hủy trước 14 ngày. Hủy từ 7 - 14 ngày phạt 50% tiền cọc. Dưới 7 ngày không hoàn cọc.",
+      "Vui lòng không mang theo thú cưng khi chưa có sự đồng ý của quản lý villa. Giữ gìn vệ sinh chung và hạn chế làm ồn sau 22:00."
+    ]
+  },
+  "services": [
+    {
+      "icon": "Waves",
+      "title": "Hồ Bơi Riêng Biệt",
+      "description": "Mỗi villa sở hữu một hồ bơi riêng biệt với hệ thống lọc tuần hoàn thông minh, tuyệt đối an toàn cho làn da nhạy cảm."
+    },
+    {
+      "icon": "Flame",
+      "title": "Tiệc BBQ Ngoài Trời",
+      "description": "Khoảng sân vườn xanh mát lộng gió biển được set up sẵn bếp nướng, bàn ghế ăn ngoài trời lãng mạn cho những bữa tiệc nướng ấm cúng."
+    },
+    {
+      "icon": "Utensils",
+      "title": "Bếp Nấu Đầy Đủ",
+      "description": "Gian bếp gia đình đầy đủ tủ lạnh, lò vi sóng, bếp điện từ và đầy đủ dụng cụ nấu nướng để bạn tha hồ trổ tài nấu hải sản tươi sống."
+    },
+    {
+      "icon": "Wifi",
+      "title": "Wifi Tốc Độ Cao",
+      "description": "Hệ thống wifi mesh phủ sóng toàn diện từ phòng ngủ đến hồ bơi, đảm bảo kết nối mượt mà cho cả nhu cầu giải trí và làm việc từ xa."
+    },
+    {
+      "icon": "Car",
+      "title": "Bãi Đỗ Xe An Toàn",
+      "description": "Bãi đỗ xe rộng rãi, camera an ninh giám sát 24/7 thích hợp cho cả xe máy, ô tô gia đình 4-7 chỗ và xe đoàn 16-29 chỗ đậu thoải mái."
+    },
+    {
+      "icon": "Mic2",
+      "title": "Dàn Karaoke Hiện Đại",
+      "description": "Trang bị tivi màn hình lớn và hệ thống âm thanh, micro không dây chất lượng cao để cả gia đình thỏa sức ca hát gắn kết tình thân."
+    }
+  ],
+  "attractions": [
+    {
+      "name": "Đồi Cát Bay Mũi Né",
+      "distance": "Cách 2.5km",
+      "image": "https://images.unsplash.com/photo-1507208773393-40d9fc670acf?auto=format&fit=crop&w=600&q=80",
+      "description": "Sa mạc thu nhỏ đổi màu kỳ thú theo giờ, điểm trượt cát thú vị và ngắm bình minh vô cùng lãng mạn."
+    },
+    {
+      "name": "Bàu Trắng (Đồi Cát Trắng)",
+      "distance": "Cách 18km",
+      "image": "https://images.unsplash.com/photo-1547119957-637f8679db1e?auto=format&fit=crop&w=600&q=80",
+      "description": "Hồ nước ngọt khổng lồ giữa lòng sa mạc trắng xóa, nơi bạn có thể trải nghiệm xe địa hình tốc độ cao cực đã."
+    },
+    {
+      "name": "Suối Tiên Mũi Né",
+      "distance": "Cách 1.2km",
+      "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80",
+      "description": "Dòng suối nước đỏ phù sa mát rượi chảy len lỏi giữa những vách nhũ đá màu đỏ cam kỳ vĩ như tranh vẽ."
+    },
+    {
+      "name": "Làng Chài Mũi Né",
+      "distance": "Cách 1.8km",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80",
+      "description": "Nơi trải nghiệm nhịp sống ngư dân đích thực, ngắm hàng trăm chiếc thúng màu sắc và mua hải sản tươi sống giá rẻ."
+    },
+    {
+      "name": "Bãi Đá Ông Địa",
+      "distance": "Cách 6km",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80",
+      "description": "Bãi tắm đá nhô ra biển thơ mộng, nơi ngắm hoàng hôn buông xuống đẹp nhất và là biểu tượng check-in Mũi Né."
+    },
+    {
+      "name": "Tháp Chàm Poshanư",
+      "distance": "Cách 8.5km",
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=600&q=80",
+      "description": "Quần thể di tích đền tháp cổ kính của vương quốc Chăm Pa xưa mang đậm dấu ấn lịch sử kiến trúc độc đáo."
+    },
+    {
+      "name": "Lâu Đài Rượu Vang RD",
+      "distance": "Cách 7.5km",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
+      "description": "Lâu đài kiến trúc châu Âu cổ kính nguy nga, hầm rượu dưới lòng đất lưu trữ hàng vạn chai vang hảo hạng từ Thung lũng Napa."
+    }
+  ],
+  "blog": [
+    {
+      "title": "Kinh nghiệm du lịch Mũi Né tự túc từ A-Z năm 2026",
+      "summary": "Tổng hợp chi tiết lịch trình ăn chơi, phương tiện di chuyển, chi phí và những điều lưu ý để có một chuyến đi trọn vẹn tại thiên đường biển Bình Thuận.",
+      "image": "/input_file_0.png",
+      "date": "15 Tháng 7, 2026",
+      "readTime": "6 phút đọc"
+    },
+    {
+      "title": "Top 5 góc check-in sống ảo cực chất tại Santoni Villa",
+      "summary": "Bí kíp săn ảnh 'triệu tim' chuẩn phong cách Hy Lạp ngay tại khuôn viên Santoni với các góc vòm cong hướng biển và hồ bơi vô cực bắt trọn nắng vàng.",
+      "image": "/input_file_1.png",
+      "date": "10 Tháng 7, 2026",
+      "readTime": "4 phút đọc"
+    },
+    {
+      "title": "Ăn gì ở Mũi Né? Top 10 quán hải sản tươi ngon giá rẻ nhất",
+      "summary": "Điểm danh những địa chỉ ăn uống nức tiếng từ lẩu thả, dông nướng cát cho đến các vựa hải sản đêm đông đúc dọc đường bờ biển Nguyễn Đình Chiểu.",
+      "image": "/input_file_2.png",
+      "date": "05 Tháng 7, 2026",
+      "readTime": "5 phút đọc"
+    },
+    {
+      "title": "Lịch trình nghỉ dưỡng 3 ngày 2 đêm cho gia đình đoàn đông",
+      "summary": "Chia sẻ kinh nghiệm sắp xếp thời gian biểu nghỉ ngơi, vui chơi, nấu nướng tiệc BBQ tối cho đoàn từ 15 - 25 người thoải mái và tiết kiệm chi phí tối đa.",
+      "image": "/input_file_3.png",
+      "date": "28 Tháng 6, 2026",
+      "readTime": "7 phút đọc"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Thanh Hằng Nguyễn",
+      "location": "TP. Hồ Chí Minh",
+      "rating": 5,
+      "text": "Không gian đẹp mê hồn, mọi góc đều mang phong cách Santorini sang xịn mịn. Gia đình mình thuê nguyên căn Santoni 3 có hồ bơi riêng rất sạch sẽ. Quản gia siêu nhiệt tình hỗ trợ mua hải sản và dọn tiệc nướng BBQ tối.",
+      "avatar": "TH"
+    },
+    {
+      "name": "Minh Trí Phạm",
+      "location": "Hà Nội",
+      "rating": 5,
+      "text": "Biệt thự biệt lập riêng tư hoàn hảo cho đoàn đông. Phòng ốc rộng rãi, giường đệm êm đúng chuẩn resort cao cấp. Sân thượng ngắm hoàng hôn rất chill. Sẽ giới thiệu cho công ty tổ chức teambuilding lần sau.",
+      "avatar": "MT"
+    },
+    {
+      "name": "Khánh Linh Vũ",
+      "location": "Bình Dương",
+      "rating": 5,
+      "text": "Cách biển chỉ vài bước chân nên cực tiện. Hồ bơi nước ấm vừa phải, các bé nhà mình mê mệt tắm cả ngày không chán. Bếp đầy đủ đồ dùng nên cả nhà mua hải sản ở làng chài về tự nấu ăn vừa ngon vừa tiết kiệm.",
+      "avatar": "KL"
+    }
+  ]
+}
