@@ -185,7 +185,7 @@ export default function SantoniApp({ data }: SantoniAppProps) {
                 {data.brand.name}
               </span>
               <span className="font-sans text-[9px] tracking-[0.2em] text-brand-gold font-bold uppercase leading-none mt-0.5">
-                SANTONI.VN • VILLA & RESORT
+                SANTONI MŨI NÉ • VILLA & RESORT
               </span>
             </div>
           </div>
