@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BookOpen, Calendar, Clock, ArrowRight } from "lucide-react";
 import { BlogItem } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide8BlogProps {
   data: BlogItem[];
@@ -45,7 +46,7 @@ export default function Slide8Blog({ data }: Slide8BlogProps) {
                   }`}
                 >
                   <div className="w-16 h-16 rounded-lg overflow-hidden shrink-0">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                    <img src={getAssetUrl(item.image)} alt={item.title} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 text-[10px] text-brand-navy/50 font-sans mb-1">
@@ -76,7 +77,7 @@ export default function Slide8Blog({ data }: Slide8BlogProps) {
           {/* Cover image */}
           <div className="relative overflow-hidden rounded-xl aspect-video mb-6 shadow-sm">
             <img
-              src={featured.image}
+              src={getAssetUrl(featured.image)}
               alt={featured.title}
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />

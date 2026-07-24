@@ -2,6 +2,7 @@
 
 import { CheckCircle, Calendar, ShieldAlert, BadgeInfo } from "lucide-react";
 import { PricingSection } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide5PricingProps {
   data: PricingSection;
@@ -16,7 +17,7 @@ export default function Slide5Pricing({ data, onNavigate }: Slide5PricingProps) 
         {/* Left Side: Cover banner */}
         <div className="lg:col-span-4 relative rounded-2xl overflow-hidden min-h-[300px] lg:min-h-full shadow-organic border border-brand-navy/5 flex flex-col justify-between p-8 group">
           <img
-            src="/image-villa3.jpg"
+            src={getAssetUrl("/image-villa3.jpg")}
             alt="Santoni Mũi Né Pricing Banner"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />

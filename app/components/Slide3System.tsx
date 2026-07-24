@@ -2,6 +2,7 @@
 
 import { Bed, Users, Waves, MapPin, ArrowUpRight } from "lucide-react";
 import { AccommodationCard } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide3SystemProps {
   data: AccommodationCard[];
@@ -60,7 +61,7 @@ export default function Slide3System({ data, onSelectVilla, onNavigate }: Slide3
                 {/* Image Section */}
                 <div className={`relative overflow-hidden w-full ${item.id === "resort-santoni" ? "h-64 md:h-80" : "h-56 md:h-64"}`}>
                   <img
-                    src={item.image}
+                    src={getAssetUrl(item.image)}
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />

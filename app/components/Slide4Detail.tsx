@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Play, ZoomIn, X, ChevronLeft, ChevronRight, Check, HelpCircle, Map, Info } from "lucide-react";
 import { VillaDetailSection } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide4DetailProps {
   data: VillaDetailSection;
@@ -72,7 +73,7 @@ export default function Slide4Detail({ data, onNavigate }: Slide4DetailProps) {
               </div>
             ) : (
               <>
-                <img src={data.bannerImage} alt="Santoni 3 Flycam Cover" className="absolute inset-0 w-full h-full object-cover opacity-85" />
+                <img src={getAssetUrl(data.bannerImage)} alt="Santoni 3 Flycam Cover" className="absolute inset-0 w-full h-full object-cover opacity-85" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/50 to-transparent" />
                 <button
                   onClick={() => setShowVideo(true)}
@@ -98,7 +99,7 @@ export default function Slide4Detail({ data, onNavigate }: Slide4DetailProps) {
                 onClick={() => setLightboxIndex(idx)}
                 className="mosaic-item cursor-pointer h-full min-h-[140px] md:min-h-[160px] relative group"
               >
-                <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" />
+                <img src={getAssetUrl(img.url)} alt={img.caption} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/40 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="p-3 bg-white/90 backdrop-blur-md rounded-full shadow-md text-brand-blue scale-75 group-hover:scale-100 transition-transform duration-300">
@@ -290,7 +291,7 @@ export default function Slide4Detail({ data, onNavigate }: Slide4DetailProps) {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.95, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                src={data.images[lightboxIndex].url}
+                src={getAssetUrl(data.images[lightboxIndex].url)}
                 alt="Santoni Detail"
                 className="max-h-[80vh] max-w-full object-contain rounded-lg"
                 onClick={(e) => e.stopPropagation()}

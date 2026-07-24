@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, Compass, Navigation } from "lucide-react";
 import { AttractionItem } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide7AttractionsProps {
   data: AttractionItem[];
@@ -77,7 +78,7 @@ export default function Slide7Attractions({ data }: Slide7AttractionsProps) {
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={item.image}
+                  src={getAssetUrl(item.image)}
                   alt={item.name}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />

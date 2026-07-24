@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { HeroSection, BrandInfo } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide1HeroProps {
   data: HeroSection;
@@ -17,7 +18,7 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
       {/* Background Image with Ken Burns zoom effect */}
       <div className="absolute inset-0 z-0">
         <img
-          src={data.backgroundImage}
+          src={getAssetUrl(data.backgroundImage)}
           alt="Santoni Mũi Né Hero Background"
           className="w-full h-full object-cover scale-105"
           style={{ animation: "subtle-zoom 20s infinite alternate" }}

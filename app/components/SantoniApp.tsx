@@ -15,6 +15,8 @@ import Slide7Attractions from "./Slide7Attractions";
 import Slide8Blog from "./Slide8Blog";
 import Slide9Contact from "./Slide9Contact";
 
+import { getAssetUrl } from "../utils/image";
+
 interface SantoniAppProps {
   data: ContentData;
 }
@@ -173,7 +175,7 @@ export default function SantoniApp({ data }: SantoniAppProps) {
           >
             <div className="relative w-11 h-11 rounded-full overflow-hidden border border-brand-gold/30 p-0.5 bg-gradient-to-br from-white via-brand-dominant to-brand-gold/10 group-hover:border-brand-gold group-hover:scale-105 transition-all duration-300 shadow-sm">
               <img
-                src="/logo-santoni.webp"
+                src={getAssetUrl("/logo-santoni.webp")}
                 alt="Santoni Homestay Logo"
                 className="w-full h-full object-cover rounded-full"
               />

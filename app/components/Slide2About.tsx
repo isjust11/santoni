@@ -1,6 +1,7 @@
 "use client";
 
 import { AboutSection } from "../types";
+import { getAssetUrl } from "../utils/image";
 
 interface Slide2AboutProps {
   data: AboutSection;
@@ -58,7 +59,7 @@ export default function Slide2About({ data }: Slide2AboutProps) {
           {/* Main image container */}
           <div className="relative overflow-hidden rounded-2xl shadow-organic border border-brand-navy/5 max-w-md lg:max-w-full w-full aspect-[4/5] group">
             <img
-              src={data.image}
+              src={getAssetUrl(data.image)}
               alt="Santoni Mũi Né Architecture"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
