@@ -5,7 +5,7 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false;
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isGithubActions ? "/santoni" : "",
-  assetPrefix: isGithubActions ? "/santoni/" : "",
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
