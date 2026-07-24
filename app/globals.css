@@ -4,17 +4,21 @@
 @theme {
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
-  
+
   --color-brand-dominant: #FAFAFB;
   --color-brand-navy: #1A2B49;
   --color-brand-blue: #0A5C96;
   --color-brand-gold: #DFB15B;
-  
+
   --shadow-organic: 0px 10px 30px rgba(26, 43, 73, 0.03);
   --shadow-organic-hover: 0px 20px 40px rgba(26, 43, 73, 0.08);
 }
 
 /* Global Aesthetics and Custom Scrollbars */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-brand-dominant);
   color: var(--color-brand-navy);
@@ -76,7 +80,7 @@ body {
 .bento-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-organic-hover);
-  border-color: rgba(223, 177, 91, 0.4); /* Sand Gold border */
+  border-color: rgba(223, 177, 91, 0.4);
 }
 
 /* Zero gap image mosaic overlay hover */
@@ -98,4 +102,27 @@ body {
   height: 2px;
   background-color: var(--color-brand-blue);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes subtle-zoom {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.12); }
+}
+
+@keyframes animate-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: animate-fade-in 0.4s ease-out;
+}
+
+@keyframes scale-up {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-scale-up {
+  animation: scale-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }

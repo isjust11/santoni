@@ -1,5 +1,7 @@
+"use client";
+
 import { motion } from "motion/react";
-import { ArrowRight, ChevronRight, Phone } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { HeroSection, BrandInfo } from "../types";
 
 interface Slide1HeroProps {
@@ -12,13 +14,13 @@ interface Slide1HeroProps {
 export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Slide1HeroProps) {
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-      {/* Background Image with Ken Burns zoom effect and deep ocean overlay */}
+      {/* Background Image with Ken Burns zoom effect */}
       <div className="absolute inset-0 z-0">
         <img
           src={data.backgroundImage}
           alt="Santoni Mũi Né Hero Background"
-          className="w-full h-full object-cover scale-105 animate-[subtle-zoom_20s_infinite_alternate]"
-          referrerPolicy="no-referrer"
+          className="w-full h-full object-cover scale-105"
+          style={{ animation: "subtle-zoom 20s infinite alternate" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A2B49]/50 via-[#1A2B49]/40 to-[#1A2B49]/70" />
       </div>
@@ -62,7 +64,7 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
           {data.subtitle}
         </motion.p>
 
-        {/* 3 Call-To-Action buttons matching screenshot */}
+        {/* 3 Call-To-Action buttons */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,7 +72,8 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
           className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-4"
         >
           <button
-            onClick={() => onNavigate(8)} // S9 Contact & booking
+            id="hero-book-btn"
+            onClick={() => onNavigate(8)}
             className="w-full sm:w-auto bg-[#0A5C96] hover:bg-[#084978] text-white font-sans font-semibold text-sm px-8 py-3.5 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-brand-blue/20 hover:scale-105 active:scale-95 group cursor-pointer"
           >
             {data.cta.book}
@@ -78,7 +81,8 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
           </button>
 
           <button
-            onClick={() => onNavigate(2)} // S3 System
+            id="hero-explore-btn"
+            onClick={() => onNavigate(2)}
             className="w-full sm:w-auto bg-white/20 hover:bg-white/30 text-white border border-white/40 backdrop-blur-md font-sans font-semibold text-sm px-8 py-3.5 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           >
             {data.cta.explore}
@@ -86,6 +90,7 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
           </button>
 
           <button
+            id="hero-quote-btn"
             onClick={onOpenQuote}
             className="w-full sm:w-auto bg-transparent hover:bg-brand-gold/10 text-brand-gold border border-brand-gold/50 hover:border-brand-gold font-sans font-semibold text-sm px-8 py-3.5 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           >
@@ -94,7 +99,7 @@ export default function Slide1Hero({ data, brand, onNavigate, onOpenQuote }: Sli
         </motion.div>
       </div>
 
-      {/* Subtle indicator scroll down */}
+      {/* Scroll down indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
         <span className="text-white font-sans text-[10px] tracking-[0.2em] uppercase font-light">Cuộn xuống</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent animate-pulse" />

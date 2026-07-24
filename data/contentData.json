@@ -17,7 +17,7 @@
       "explore": "Khám phá phòng",
       "quote": "Nhận báo giá"
     },
-    "backgroundImage": "/input_file_0.png"
+    "backgroundImage": "/image-hero.jpg"
   },
   "about": {
     "title": "Câu Chuyện Santoni",
@@ -34,13 +34,13 @@
       { "label": "Sức chứa", "value": "Đoàn từ 10 - 50 khách" },
       { "label": "Vị trí", "value": "Sát biển Huỳnh Thúc Kháng" }
     ],
-    "image": "/input_file_1.png"
+    "image": "/image-about.jpg"
   },
   "accommodations": [
     {
       "id": "santoni-1",
       "name": "Santoni 1",
-      "image": "/input_file_2.png",
+      "image": "/image-villa1.jpg",
       "rooms": 4,
       "beds": 5,
       "capacity": "12 khách",
@@ -52,7 +52,7 @@
     {
       "id": "santoni-2",
       "name": "Santoni 2",
-      "image": "/input_file_1.png",
+      "image": "/image-about.jpg",
       "rooms": 6,
       "beds": 8,
       "capacity": "18 khách",
@@ -64,7 +64,7 @@
     {
       "id": "santoni-3",
       "name": "Santoni 3",
-      "image": "/input_file_3.png",
+      "image": "/image-villa2.jpg",
       "rooms": 8,
       "beds": 10,
       "capacity": "25 khách",
@@ -76,7 +76,7 @@
     {
       "id": "resort-santoni",
       "name": "Resort Santoni",
-      "image": "/input_file_0.png",
+      "image": "/image-hero.jpg",
       "rooms": 15,
       "beds": 20,
       "capacity": "50 khách",
@@ -89,13 +89,13 @@
   "villaDetail": {
     "target": "Santoni 3",
     "subtitle": "Kiệt tác nghỉ dưỡng được săn đón nhất tại Mũi Né",
-    "bannerImage": "/input_file_0.png",
+    "bannerImage": "/image-hero.jpg",
     "videoPlaceholder": "Video flycam toàn cảnh biệt thự và bờ biển lộng gió",
     "images": [
-      { "url": "/input_file_3.png", "caption": "Phòng ngủ Master ấm cúng với ô cửa vòm nhìn ra rặng dừa" },
-      { "url": "/input_file_1.png", "caption": "Ngoại thất trắng tinh khôi chuẩn Santorini dưới nắng vàng" },
-      { "url": "/input_file_2.png", "caption": "Khu vực ăn uống ngoài trời bên hồ bơi lãng mạn" },
-      { "url": "/input_file_0.png", "caption": "Hồ bơi vô cực ngập tràn ánh hoàng hôn" }
+      { "url": "/image-villa2.jpg", "caption": "Phòng ngủ Master ấm cúng với ô cửa vòm nhìn ra rặng dừa" },
+      { "url": "/image-about.jpg", "caption": "Ngoại thất trắng tinh khôi chuẩn Santorini dưới nắng vàng" },
+      { "url": "/image-villa1.jpg", "caption": "Khu vực ăn uống ngoài trời bên hồ bơi lãng mạn" },
+      { "url": "/image-pool.jpg", "caption": "Hồ bơi vô cực ngập tràn ánh hoàng hôn" }
     ],
     "specs": {
       "rooms": "8 phòng ngủ khép kín sang trọng",
@@ -248,28 +248,28 @@
     {
       "title": "Kinh nghiệm du lịch Mũi Né tự túc từ A-Z năm 2026",
       "summary": "Tổng hợp chi tiết lịch trình ăn chơi, phương tiện di chuyển, chi phí và những điều lưu ý để có một chuyến đi trọn vẹn tại thiên đường biển Bình Thuận.",
-      "image": "/input_file_0.png",
+      "image": "/image-hero.jpg",
       "date": "15 Tháng 7, 2026",
       "readTime": "6 phút đọc"
     },
     {
       "title": "Top 5 góc check-in sống ảo cực chất tại Santoni Villa",
       "summary": "Bí kíp săn ảnh 'triệu tim' chuẩn phong cách Hy Lạp ngay tại khuôn viên Santoni với các góc vòm cong hướng biển và hồ bơi vô cực bắt trọn nắng vàng.",
-      "image": "/input_file_1.png",
+      "image": "/image-about.jpg",
       "date": "10 Tháng 7, 2026",
       "readTime": "4 phút đọc"
     },
     {
       "title": "Ăn gì ở Mũi Né? Top 10 quán hải sản tươi ngon giá rẻ nhất",
       "summary": "Điểm danh những địa chỉ ăn uống nức tiếng từ lẩu thả, dông nướng cát cho đến các vựa hải sản đêm đông đúc dọc đường bờ biển Nguyễn Đình Chiểu.",
-      "image": "/input_file_2.png",
+      "image": "/image-villa1.jpg",
       "date": "05 Tháng 7, 2026",
       "readTime": "5 phút đọc"
     },
     {
       "title": "Lịch trình nghỉ dưỡng 3 ngày 2 đêm cho gia đình đoàn đông",
       "summary": "Chia sẻ kinh nghiệm sắp xếp thời gian biểu nghỉ ngơi, vui chơi, nấu nướng tiệc BBQ tối cho đoàn từ 15 - 25 người thoải mái và tiết kiệm chi phí tối đa.",
-      "image": "/input_file_3.png",
+      "image": "/image-pool.jpg",
       "date": "28 Tháng 6, 2026",
       "readTime": "7 phút đọc"
     }

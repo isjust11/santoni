@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { Star, Send, Phone, MessageSquare, Facebook, MapPin, Mail, Share2 } from "lucide-react";
+import { Star, Send, Phone, MessageSquare, ExternalLink, MapPin, Mail, Share2 } from "lucide-react";
 import { ReviewItem, BrandInfo } from "../types";
 
 interface Slide9ContactProps {
@@ -14,7 +16,7 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
     phone: "",
     villa: selectedVillaId || "santoni-3",
     dates: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -45,8 +47,8 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
   return (
     <section className="relative w-full min-h-screen py-20 px-6 md:px-12 lg:px-20 bg-brand-dominant flex flex-col justify-center overflow-hidden">
       <div className="max-w-7xl mx-auto w-full">
-        
-        {/* Title Block */}
+
+        {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-brand-blue font-sans font-semibold text-xs tracking-[0.25em] uppercase mb-3 block">
             08 / PHẢN HỒI & LIÊN HỆ ĐẶT PHÒNG
@@ -59,10 +61,10 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
           </p>
         </div>
 
-        {/* 3-Column Bento Grid */}
+        {/* 3-Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
-          {/* Left Column: Google Reviews list (col-span-4) */}
+
+          {/* Reviews */}
           <div className="lg:col-span-4 flex flex-col justify-between bg-white/50 backdrop-blur-md rounded-2xl border border-brand-navy/5 shadow-organic p-6">
             <div>
               <div className="flex items-center justify-between border-b border-brand-navy/5 pb-4 mb-6">
@@ -72,13 +74,12 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                 </div>
                 <div className="flex flex-col items-end">
                   <div className="flex items-center text-brand-gold gap-0.5">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="w-4.5 h-4.5 fill-current" />)}
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                   </div>
                   <span className="font-sans text-xs font-bold text-brand-blue mt-1">4.9 / 5.0 (284 reviews)</span>
                 </div>
               </div>
 
-              {/* Reviews Scrollable stack */}
               <div className="space-y-4 max-h-[360px] overflow-y-auto pr-1">
                 {reviews.map((rev, idx) => (
                   <div key={idx} className="bg-white/80 border border-brand-navy/5 rounded-xl p-4 shadow-sm hover:border-brand-gold/20 transition duration-300">
@@ -91,7 +92,6 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                         <span className="font-sans text-[10px] text-brand-navy/50 block leading-none mt-0.5">{rev.location}</span>
                       </div>
                     </div>
-                    {/* Stars */}
                     <div className="flex items-center text-brand-gold gap-0.5 mb-2">
                       {[...Array(rev.rating)].map((_, i) => <Star key={i} className="w-3 h-3 fill-current" />)}
                     </div>
@@ -103,7 +103,6 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
               </div>
             </div>
 
-            {/* Google review button banner */}
             <div className="mt-6 pt-4 border-t border-brand-navy/5 text-center">
               <a
                 href="https://maps.google.com"
@@ -116,7 +115,7 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
             </div>
           </div>
 
-          {/* Center Column: Interactive Reservation/Inquiry Form (col-span-4) */}
+          {/* Booking Form */}
           <div className="lg:col-span-4 bg-white rounded-2xl border border-brand-navy/5 shadow-organic p-6 flex flex-col justify-between">
             {isSuccess ? (
               <div className="flex-1 flex flex-col items-center justify-center text-center p-6 animate-scale-up">
@@ -128,11 +127,8 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                   Cảm ơn <strong>{formData.name}</strong>. Bộ phận quản gia phụ trách <strong>{getVillaName(formData.villa)}</strong> đã tiếp nhận số điện thoại <strong>{formData.phone}</strong> và sẽ liên hệ tư vấn trong 5 - 10 phút qua điện thoại hoặc Zalo.
                 </p>
                 <button
-                  onClick={() => {
-                    setIsSuccess(false);
-                    setFormData({ name: "", phone: "", villa: "santoni-3", dates: "", message: "" });
-                  }}
-                  className="bg-brand-blue hover:bg-brand-blue/90 text-white font-sans text-xs px-6 py-2.5 rounded-lg transition"
+                  onClick={() => { setIsSuccess(false); setFormData({ name: "", phone: "", villa: "santoni-3", dates: "", message: "" }); }}
+                  className="bg-brand-blue hover:bg-brand-blue/90 text-white font-sans text-xs px-6 py-2.5 rounded-lg transition cursor-pointer"
                 >
                   Gửi yêu cầu mới
                 </button>
@@ -142,14 +138,13 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                 <div>
                   <h3 className="font-serif text-lg font-bold text-brand-navy mb-1">Nhận Báo Giá & Đặt Chỗ</h3>
                   <p className="font-sans text-xs text-brand-navy/50 mb-6">Cam kết bảo mật thông tin liên hệ của bạn</p>
-
                   <div className="space-y-4">
-                    {/* Name Input */}
                     <div>
                       <label className="font-sans text-[11px] font-semibold text-brand-navy/70 uppercase tracking-wider block mb-1">
                         Họ và Tên <span className="text-red-500">*</span>
                       </label>
                       <input
+                        id="contact-name"
                         type="text"
                         required
                         placeholder="Ví dụ: Nguyễn Văn A"
@@ -158,13 +153,12 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                         className="w-full bg-brand-navy/5 border border-transparent focus:border-brand-blue/30 focus:bg-white rounded-lg px-4 py-2.5 font-sans text-sm outline-none transition"
                       />
                     </div>
-
-                    {/* Phone Input */}
                     <div>
                       <label className="font-sans text-[11px] font-semibold text-brand-navy/70 uppercase tracking-wider block mb-1">
                         Số điện thoại / Zalo <span className="text-red-500">*</span>
                       </label>
                       <input
+                        id="contact-phone"
                         type="tel"
                         required
                         placeholder="Số liên hệ (Để tư vấn qua Zalo)"
@@ -173,13 +167,12 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                         className="w-full bg-brand-navy/5 border border-transparent focus:border-brand-blue/30 focus:bg-white rounded-lg px-4 py-2.5 font-sans text-sm outline-none transition"
                       />
                     </div>
-
-                    {/* Select Villa */}
                     <div>
                       <label className="font-sans text-[11px] font-semibold text-brand-navy/70 uppercase tracking-wider block mb-1">
                         Chọn Căn Biệt Thự
                       </label>
                       <select
+                        id="contact-villa"
                         value={formData.villa}
                         onChange={(e) => setFormData({ ...formData, villa: e.target.value })}
                         className="w-full bg-brand-navy/5 border border-transparent focus:border-brand-blue/30 focus:bg-white rounded-lg px-4 py-2.5 font-sans text-sm outline-none transition cursor-pointer"
@@ -190,13 +183,12 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                         <option value="resort-santoni">Khu phức hợp Resort Santoni (15 phòng)</option>
                       </select>
                     </div>
-
-                    {/* Checkin Checkout dates */}
                     <div>
                       <label className="font-sans text-[11px] font-semibold text-brand-navy/70 uppercase tracking-wider block mb-1">
                         Dự kiến ngày đi & Số người
                       </label>
                       <input
+                        id="contact-dates"
                         type="text"
                         placeholder="Ví dụ: 20/08 - 22/08, đoàn 15 người"
                         value={formData.dates}
@@ -204,13 +196,12 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                         className="w-full bg-brand-navy/5 border border-transparent focus:border-brand-blue/30 focus:bg-white rounded-lg px-4 py-2.5 font-sans text-sm outline-none transition"
                       />
                     </div>
-
-                    {/* Message input */}
                     <div>
                       <label className="font-sans text-[11px] font-semibold text-brand-navy/70 uppercase tracking-wider block mb-1">
                         Yêu cầu đặc biệt (Nếu có)
                       </label>
                       <textarea
+                        id="contact-message"
                         rows={2}
                         placeholder="Ví dụ: Cần setup BBQ bãi biển, hỗ trợ loa kéo..."
                         value={formData.message}
@@ -220,9 +211,8 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                     </div>
                   </div>
                 </div>
-
-                {/* Submit button */}
                 <button
+                  id="contact-submit-btn"
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-brand-blue hover:bg-brand-blue/90 disabled:bg-brand-blue/50 text-white font-sans font-medium text-xs py-3.5 rounded-xl flex items-center justify-center gap-2 mt-6 cursor-pointer transition shadow-md shadow-brand-blue/15"
@@ -234,10 +224,8 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
             )}
           </div>
 
-          {/* Right Column: Interactive Map & Contact Links (col-span-4) */}
+          {/* Map & Contact Links */}
           <div className="lg:col-span-4 flex flex-col justify-between gap-6">
-            
-            {/* Google Map Box */}
             <div className="bg-white/50 backdrop-blur-md rounded-2xl border border-brand-navy/5 shadow-organic p-4 h-[240px] flex flex-col justify-between overflow-hidden">
               <iframe
                 title="Bản đồ chỉ đường Santoni Mũi Né"
@@ -249,25 +237,18 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
               />
             </div>
 
-            {/* Quick Contact buttons stack */}
             <div className="bg-white/50 backdrop-blur-md rounded-2xl border border-brand-navy/5 shadow-organic p-6 flex-1 flex flex-col justify-between">
               <div>
                 <h4 className="font-serif text-base font-bold text-brand-navy mb-4">Kết Nối Đa Kênh</h4>
-                
                 <div className="space-y-3 font-sans text-xs md:text-sm">
-                  {/* Address */}
                   <div className="flex items-start gap-2.5 text-brand-navy/80">
                     <MapPin className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                     <span className="leading-tight">{brand.address}</span>
                   </div>
-
-                  {/* Hotline */}
                   <a href={`tel:${brand.hotline.replace(/[^0-9]/g, "")}`} className="flex items-center gap-2.5 text-brand-navy/80 hover:text-brand-blue transition">
                     <Phone className="w-5 h-5 text-brand-blue shrink-0" />
                     <span className="font-bold">{brand.hotline} (Bộ phận booking)</span>
                   </a>
-
-                  {/* Email */}
                   <a href={`mailto:${brand.email}`} className="flex items-center gap-2.5 text-brand-navy/80 hover:text-brand-blue transition">
                     <Mail className="w-5 h-5 text-brand-blue shrink-0" />
                     <span>{brand.email}</span>
@@ -275,50 +256,27 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
                 </div>
               </div>
 
-              {/* Social widget links */}
               <div className="mt-6 pt-4 border-t border-brand-navy/5">
                 <p className="font-sans text-[10px] uppercase text-brand-navy/40 tracking-widest mb-3">Tìm chúng tôi trên mạng xã hội</p>
                 <div className="flex items-center gap-3">
-                  {/* Zalo Button */}
-                  <a
-                    href={brand.zalo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-[#0068FF]/10 hover:bg-[#0068FF]/20 text-[#0068FF] font-sans font-semibold text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition"
-                  >
+                  <a href={brand.zalo} target="_blank" rel="noopener noreferrer" className="flex-1 bg-[#0068FF]/10 hover:bg-[#0068FF]/20 text-[#0068FF] font-sans font-semibold text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition">
                     <MessageSquare className="w-4 h-4 fill-current" />
                     Zalo
                   </a>
-
-                  {/* Facebook Button */}
-                  <a
-                    href={brand.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-[#1877F2]/10 hover:bg-[#1877F2]/20 text-[#1877F2] font-sans font-semibold text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition"
-                  >
-                    <Facebook className="w-4 h-4 fill-current" />
+                  <a href={brand.facebook} target="_blank" rel="noopener noreferrer" className="flex-1 bg-[#1877F2]/10 hover:bg-[#1877F2]/20 text-[#1877F2] font-sans font-semibold text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition">
+                    <ExternalLink className="w-4 h-4" />
                     Facebook
                   </a>
-
-                  {/* TikTok Button */}
-                  <a
-                    href={brand.tiktok}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-brand-navy/5 hover:bg-brand-navy/10 text-brand-navy rounded-lg transition"
-                    title="TikTok"
-                  >
+                  <a href={brand.tiktok} target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-navy/5 hover:bg-brand-navy/10 text-brand-navy rounded-lg transition" title="TikTok">
                     <Share2 className="w-4 h-4" />
                   </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
-        {/* Footer legal info */}
+        {/* Footer */}
         <div className="mt-16 pt-8 border-t border-brand-navy/10 text-center font-sans text-[11px] text-brand-navy/40 flex flex-col md:flex-row items-center justify-between gap-4">
           <p>© 2026 {brand.name}. Tất cả các quyền được bảo lưu. Thiết kế lấy cảm hứng từ Aman Resorts.</p>
           <div className="flex items-center gap-4">
@@ -327,7 +285,6 @@ export default function Slide9Contact({ reviews, brand, selectedVillaId }: Slide
             <span className="hover:text-brand-blue cursor-pointer">Chính sách hủy phòng</span>
           </div>
         </div>
-
       </div>
     </section>
   );

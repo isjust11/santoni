@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+"use client";
+
 import { AboutSection } from "../types";
 
 interface Slide2AboutProps {
@@ -19,11 +20,11 @@ export default function Slide2About({ data }: Slide2AboutProps) {
           <span className="text-brand-blue font-sans font-semibold text-xs tracking-[0.25em] uppercase mb-3">
             01 / THƯƠNG HIỆU ĐẲNG CẤP
           </span>
-          
+
           <h2 className="font-serif text-3xl md:text-5xl text-[#3260b4] tracking-tight mb-4 font-bold">
             {data.title}
           </h2>
-          
+
           <p className="font-sans text-brand-gold text-lg font-medium tracking-wide mb-8 max-w-2xl">
             {data.subtitle}
           </p>
@@ -49,23 +50,20 @@ export default function Slide2About({ data }: Slide2AboutProps) {
           </div>
         </div>
 
-        {/* Right Side: Showcase Image with editorial overlapping and shadows */}
+        {/* Right Side: Showcase Image */}
         <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-end z-0">
           {/* Subtle gold glow card frame */}
           <div className="absolute -inset-1 rounded-[18px] bg-gradient-to-tr from-brand-gold/15 to-transparent blur-lg opacity-80" />
 
-          {/* main image container */}
+          {/* Main image container */}
           <div className="relative overflow-hidden rounded-2xl shadow-organic border border-brand-navy/5 max-w-md lg:max-w-full w-full aspect-[4/5] group">
             <img
               src={data.image}
               alt="Santoni Mũi Né Architecture"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              referrerPolicy="no-referrer"
             />
-            {/* Elegant overlay shadow inside image */}
             <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/40 via-transparent to-transparent opacity-60" />
-            
-            {/* Visual marker inside photo frame */}
+
             <div className="absolute bottom-6 left-6 text-white z-10">
               <p className="font-serif italic text-lg font-light">Santoni Mũi Né Exterior</p>
               <p className="font-sans text-[10px] tracking-widest uppercase text-white/70 mt-1">
@@ -74,7 +72,7 @@ export default function Slide2About({ data }: Slide2AboutProps) {
             </div>
           </div>
 
-          {/* Floating artistic quote block overlapping the image (Editorial layering) */}
+          {/* Floating artistic quote block */}
           <div className="absolute -bottom-6 -left-6 md:-left-10 bg-white p-6 rounded-xl shadow-organic border border-brand-navy/5 max-w-xs hidden sm:block">
             <p className="font-serif italic text-brand-navy text-sm font-light leading-relaxed">
               &ldquo;Không đơn thuần là một kỳ nghỉ, đó là hành trình chạm tới tinh hoa văn hóa Địa Trung Hải rực rỡ.&rdquo;
